@@ -38,4 +38,4 @@ To calulate the function points for a specific use case we used the [TINY TOOLS 
     Time spent: 120min.
 
 ![domain table](../FunctionPoints/sign_of_life_daemon_1.png)
-![complexity table](../FunctionPoints/send_custom_emails_2.png)
+![complexity table](../FunctionPoints/sign_of_life_daemon_2.png)
