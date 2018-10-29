@@ -159,7 +159,7 @@ DigiWill will give you the ability to specify actions the tool should take in th
 
 ### 2.2 Product perspective
 
-![use case diagram](useCaseDiagram.png)
+![use case diagram](UC_Diagram.png)
 
 *use case diagram*
 
