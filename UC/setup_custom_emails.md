@@ -74,7 +74,7 @@ To calulate the function points for a specific use case we used the [TINY TOOLS 
     Score:      31.08 Function Points.
     Time spent: 150min.
 
-####Domain Characteristic Table
+### Domain Characteristic Table
 ![domain table](../FunctionPoints/send_custom_emails_1.png)
-####Complexity Adjustment Table
+### Complexity Adjustment Table
 ![complexity table](../FunctionPoints/send_custom_emails_2.png)
