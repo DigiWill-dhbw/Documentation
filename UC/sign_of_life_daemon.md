@@ -3,7 +3,7 @@
 # 1. Sign of life daemon
 
 ## 1.1 Brief Description
-This use case describes a process where the system monitors wether a user is alive or dead. A user can send life signs, but if he doe not he will get reminders after a certain amount of time. When reminders are ignored, the system assumes that the user died. After that, custom activities that were configured before (e.g. sending emails or contacting relatives) will be triggered. This process is running in background, therefore no mockups are provided.
+This use case describes a process where the system monitors wether a user is alive or dead. A user can send life signs, but if he does not he will get reminders after a certain amount of time. When reminders are ignored, the system assumes that the user died. After that, custom activities that were configured before (e.g. sending emails or contacting relatives) will be triggered. This process is running in background, therefore no mockups are provided.
 
 ## 1.2 Screenshots
 
