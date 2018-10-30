@@ -273,10 +273,10 @@ Actions the user specified for the event of their death should be carried out as
 
 •               resource utilization, such as memory, disk, communications, etc.\]--->
 
-### 3.6.1 Live interaction
+#### 3.6.1 Live interaction
 Any changes the user makes to his/her data (settings, actions, etc.) should be saved to the database instantaneously. This should only be delayed by network delays.
 
-### 3.6.2 Emails
+#### 3.6.2 Emails
 Emails related to client administration should reach the client within 5 minutes.
 Emails related to actions the user planned for the event of their death should be sent out within 15 minutes. If the service is degraded these emails should be sent out as soon as possible but within 5 hours.
 
