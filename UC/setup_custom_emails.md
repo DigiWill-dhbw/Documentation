@@ -11,6 +11,8 @@ This use case describes the creation, reading, updating and deleting of custom e
 
 ![AD_CRUD Setup custom emails](../ActivityDiagrams/send_custom_emails.png)
 
+If you're interested in out [.feature file](https://raw.githubusercontent.com/DigiWill-dhbw/DigiWill/master/Backend/src/test/resources/cucumber/setupCustomEmails.feature) you can also view that to see how test will be conducted.
+
 ### 2.1 Basic flow
 
 In general a user will create several custom emails send in the event of his death. He can list all of this custom emails, edit and sometimes also delete them.
