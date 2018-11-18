@@ -5,7 +5,10 @@
 ## 1.1 Brief Description
 This use case allows a user to login with his registered account by entering his Email adress and password. He can do this by using the web or mobile application.
 
-## 1.2 Screenshots
+## 1.2 Mockup
+![crud_create](../Mockups/login_1.png)
+
+## 1.3 Screenshots
 
 N/A
 
@@ -29,7 +32,7 @@ The main precondition for this use case are:
 
 # 5. Postconditions
 
-## 5.1 Save login sessions
+## 5.1 Saved login sessions
 While entering his login credentials the user can decide by clicking on a checkbox wether the login session should be saved or not. When he does he must not enter his credentials after restarting the application anymore. Between the last and next login five days can pass until the stored session gets deleted and the user must login again. Stored sessions do only exist in the web application and only three at the same time.
 
 # 6. Function Points
