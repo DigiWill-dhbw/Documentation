@@ -5,8 +5,8 @@
 ## 1.1 Brief Description
 This use case allows a user to login with his registered account by entering his Email adress or username and password. He can do this by using the web or mobile application.
 
-## 1.2 Mockup
-![crud_create](../Mockups/login_1.png)
+## 1.2 Mockups
+![Login](../Mockups/login_1.png)
 
 ## 1.3 Screenshots
 
