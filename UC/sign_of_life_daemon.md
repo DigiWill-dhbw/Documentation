@@ -16,7 +16,7 @@ N/A
 ### Activity Diagram
 ![Activity Diagram](../ActivityDiagrams/sign_of_life_daemon.png)
 
-If you're interested in out [.feature file](https://raw.githubusercontent.com/DigiWill-dhbw/DigiWill/master/Backend/src/test/resources/cucumber/signOfLifeDaemon.feature) you can also view that to see how test will be conducted.
+If you're interested in our [.feature file](https://raw.githubusercontent.com/DigiWill-dhbw/DigiWill/master/Backend/src/test/resources/cucumber/signOfLifeDaemon.feature) you can view how tests will be conducted.
 
 # 3. Special Requirements
 
