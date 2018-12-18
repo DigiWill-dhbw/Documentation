@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <script th:if="${failure}" src="js/register.js" type="application/javascript"></script>
+    <th:block th:include="fragments/header :: head (title='DigiWill - Register')"></th:block>
+</head>
+<body>
+<div th:include="fragments/header :: header"></div>
+
+<script th:if="${failure}">
+    launch_toast();
+</script>
+<div id="content">
+    <div class="panel">
+        <div id="toast">
+            <div id="img">Error</div>
+            <div id="desc" th:text="${responseText}"></div>
+        </div>
+        <div class="form">
+            <form th:action="@{/register}" method="post">
+                <table>
+                    <tr>
+                        <td><label>Email address : </label></td><td><input id="emailInput" type="email" name="email"/> </td>
+                    </tr>
+                    <tr>
+                        <td><label>Password: </label></td>
+                        <td><input id="passwordInput" type="password" name="password"/></td>
+                            <td><div class="tooltip">?
+                                <div class="tooltiptext">
+                                    Must be at least 8 characters long <br>
+                                    Must include at least one:
+                                    <ul>
+                                        <li>Uppercase letter</li>
+                                        <li>Lowercase letter</li>
+                                        <li>Digit</li>
+                                        <li>Special character</li>
+                                    </ul>
+                                </div>
+                            </div></td>
+                    </tr>
+                    <tr>
+                        <td>Repeat:</td>
+                        <td><input id="passwordInput_rep" type="password" name="password_rep"/></td>
+                    </tr>
+                    <tr>
+                        <td>First name:</td>
+                        <td><input id="firstName" type="text" name="firstName"/></td>
+                    </tr>
+                    <tr>
+                        <td>Surname:</td>
+                        <td><input id="surName" type="text" name="surName"/></td>
+                    </tr>
+                    <tr>
+                        <td>Birthday</td>
+                        <td><input id="birthday" type="date" name="birthday"/></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input id="registerButton" type="submit" value="Register"/></td>
+                    </tr>
+
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+<div th:include="fragments/footer :: footer"></div>
+</body>
+</html>
