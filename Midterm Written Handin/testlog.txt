@@ -1,0 +1,68 @@
+
+[WARNING] Tests run: 42, Failures: 0, Errors: 0, Skipped: 13, Time elapsed: 87.366 s - in de.digiwill.CucumberTest
+[INFO] Running de.digiwill.StepDefinitons.SetupCustomEmailsFeatureTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0 s - in de.digiwill.StepDefinitons.SetupCustomEmailsFeatureTest
+[INFO] Running de.digiwill.maildispatcher.MailDispatcherTest
+2018-12-12 00:04:49,844 DEBUG [main] de.digiwill.util.EmailDispatcher: Creating Email
+2018-12-12 00:04:49,871 DEBUG [main] de.digiwill.util.EmailDispatcher: Sending Email
+2018-12-12 00:04:49,884 DEBUG [main] de.digiwill.util.EmailDispatcher: Email sent
+2018-12-12 00:04:49,899 DEBUG [main] de.digiwill.util.EmailDispatcher: Creating Email
+2018-12-12 00:04:49,900 ERROR [main] de.digiwill.util.EmailDispatcher: Bad email recipient
+2018-12-12 00:04:49,902 DEBUG [main] de.digiwill.util.EmailDispatcher: Creating Email
+2018-12-12 00:04:49,902 DEBUG [main] de.digiwill.util.EmailDispatcher: Sending Email
+2018-12-12 00:04:49,902 DEBUG [main] de.digiwill.util.EmailDispatcher: Email sent
+2018-12-12 00:04:49,904 DEBUG [main] de.digiwill.util.EmailDispatcher: Initiating sendReminder
+2018-12-12 00:04:49,905 DEBUG [main] de.digiwill.util.EmailDispatcher: Creating Email
+2018-12-12 00:04:49,905 DEBUG [main] de.digiwill.util.EmailDispatcher: Sending Email
+2018-12-12 00:04:49,905 DEBUG [main] de.digiwill.util.EmailDispatcher: Email sent
+2018-12-12 00:04:49,907 DEBUG [main] de.digiwill.util.EmailDispatcher: Creating Email
+2018-12-12 00:04:49,907 ERROR [main] de.digiwill.util.EmailDispatcher: Bad email recipient
+2018-12-12 00:04:49,909 DEBUG [main] de.digiwill.util.EmailDispatcher: Initiating sendRegistrarionConfirmation
+2018-12-12 00:04:49,909 DEBUG [main] de.digiwill.util.EmailDispatcher: Creating Email
+2018-12-12 00:04:49,909 DEBUG [main] de.digiwill.util.EmailDispatcher: Sending Email
+2018-12-12 00:04:49,909 DEBUG [main] de.digiwill.util.EmailDispatcher: Email sent
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.315 s - in de.digiwill.maildispatcher.MailDispatcherTest
+2018-12-12 00:04:49,925 INFO  [Thread-9] de.flapdoodle.embed.process.io.Slf4jLevel$3: 2018-12-12T00:04:49.925+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:55206 #1 (1 connection now open)
+2018-12-12 00:04:49,926 INFO  [Thread-9] de.flapdoodle.embed.process.io.Slf4jLevel$3: 2018-12-12T00:04:49.926+0100 I COMMAND  [conn1] terminating, shutdown command received
+2018-12-12 00:04:49,926 INFO  [Thread-9] de.flapdoodle.embed.process.io.Slf4jLevel$3: 2018-12-12T00:04:49.926+0100 I FTDC     [conn1] Shutting down full-time diagnostic data capture
+2018-12-12 00:04:49,927 INFO  [Thread-12] org.springframework.context.support.AbstractApplicationContext: Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5d97caa4: startup date [Wed Dec 12 00:03:22 CET 2018]; root of context hierarchy
+2018-12-12 00:04:49,928 INFO  [Thread-9] de.flapdoodle.embed.process.io.Slf4jLevel$3: 2018-12-12T00:04:49.928+0100 I CONTROL  [conn1] now exiting
+2018-12-12 00:04:49,928 INFO  [Thread-9] de.flapdoodle.embed.process.io.Slf4jLevel$3: 2018-12-12T00:04:49.928+0100 I NETWORK  [conn1] shutdown: going to close listening sockets...
+2018-12-12 00:04:49,928 INFO  [Thread-9] de.flapdoodle.embed.process.io.Slf4jLevel$3: 2018-12-12T00:04:49.928+0100 I NETWORK  [conn1] closing listening socket: 5
+2018-12-12 00:04:49,929 INFO  [Thread-9] de.flapdoodle.embed.process.io.Slf4jLevel$3: 2018-12-12T00:04:49.929+0100 I NETWORK  [conn1] closing listening socket: 6
+2018-12-12 00:04:49,929 INFO  [Thread-9] de.flapdoodle.embed.process.io.Slf4jLevel$3: 2018-12-12T00:04:49.929+0100 I NETWORK  [conn1] removing socket file: /tmp/mongodb-56877.sock
+2018-12-12 00:04:49,929 INFO  [Thread-9] de.flapdoodle.embed.process.io.Slf4jLevel$3: 2018-12-12T00:04:49.929+0100 I NETWORK  [conn1] shutdown: going to flush diaglog...
+2018-12-12 00:04:49,930 INFO  [Thread-9] de.flapdoodle.embed.process.io.Slf4jLevel$3: 2018-12-12T00:04:49.929+0100 I NETWORK  [conn1] shutdown: going to close sockets...
+2018-12-12 00:04:49,930 INFO  [Thread-9] de.flapdoodle.embed.process.io.Slf4jLevel$3: 2018-12-12T00:04:49.930+0100 I STORAGE  [conn1] WiredTigerKVEngine shutting down
+2018-12-12 00:04:49,932 INFO  [Thread-5] org.springframework.context.support.AbstractApplicationContext: Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@7283d3eb: startup date [Wed Dec 12 00:03:18 CET 2018]; root of context hierarchy
+2018-12-12 00:04:49,933 INFO  [Thread-3] de.flapdoodle.embed.process.io.Slf4jLevel$3: 2018-12-12T00:04:49.932+0100 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:41385 #3 (3 connections now open)
+2018-12-12 00:04:49,933 INFO  [Thread-3] de.flapdoodle.embed.process.io.Slf4jLevel$3: 2018-12-12T00:04:49.933+0100 I COMMAND  [conn3] terminating, shutdown command received
+2018-12-12 00:04:49,933 INFO  [Thread-3] de.flapdoodle.embed.process.io.Slf4jLevel$3: 2018-12-12T00:04:49.933+0100 I FTDC     [conn3] Shutting down full-time diagnostic data capture
+2018-12-12 00:04:49,939 INFO  [Thread-3] de.flapdoodle.embed.process.io.Slf4jLevel$3: 2018-12-12T00:04:49.938+0100 I CONTROL  [conn3] now exiting
+2018-12-12 00:04:49,939 INFO  [Thread-3] de.flapdoodle.embed.process.io.Slf4jLevel$3: 2018-12-12T00:04:49.939+0100 I NETWORK  [conn3] shutdown: going to close listening sockets...
+2018-12-12 00:04:49,939 INFO  [Thread-3] de.flapdoodle.embed.process.io.Slf4jLevel$3: 2018-12-12T00:04:49.939+0100 I NETWORK  [conn3] closing listening socket: 5
+2018-12-12 00:04:49,939 INFO  [Thread-3] de.flapdoodle.embed.process.io.Slf4jLevel$3: 2018-12-12T00:04:49.939+0100 I NETWORK  [conn3] closing listening socket: 6
+2018-12-12 00:04:49,940 INFO  [Thread-3] de.flapdoodle.embed.process.io.Slf4jLevel$3: 2018-12-12T00:04:49.940+0100 I NETWORK  [conn3] removing socket file: /tmp/mongodb-51182.sock
+2018-12-12 00:04:49,940 INFO  [Thread-3] de.flapdoodle.embed.process.io.Slf4jLevel$3: 2018-12-12T00:04:49.940+0100 I NETWORK  [conn3] shutdown: going to flush diaglog...
+2018-12-12 00:04:49,940 INFO  [Thread-3] de.flapdoodle.embed.process.io.Slf4jLevel$3: 2018-12-12T00:04:49.940+0100 I NETWORK  [conn3] shutdown: going to close sockets...
+2018-12-12 00:04:49,941 INFO  [Thread-3] de.flapdoodle.embed.process.io.Slf4jLevel$3: 2018-12-12T00:04:49.941+0100 I NETWORK  [conn1] end connection 127.0.0.1:40843 (2 connections now open)
+2018-12-12 00:04:49,941 INFO  [Thread-3] de.flapdoodle.embed.process.io.Slf4jLevel$3: 2018-12-12T00:04:49.941+0100 I STORAGE  [conn3] WiredTigerKVEngine shutting down
+2018-12-12 00:04:49,942 INFO  [Thread-3] de.flapdoodle.embed.process.io.Slf4jLevel$3: 2018-12-12T00:04:49.942+0100 I NETWORK  [conn2] end connection 127.0.0.1:40845 (2 connections now open)
+2018-12-12 00:04:49,944 INFO  [Thread-5] com.mongodb.diagnostics.logging.SLF4JLogger: Closed connection [connectionId{localValue:2, serverValue:2}] to localhost:51182 because the pool has been closed.
+2018-12-12 00:04:49,965 INFO  [Thread-9] de.flapdoodle.embed.process.io.Slf4jLevel$3: 2018-12-12T00:04:49.965+0100 I STORAGE  [conn1] shutdown: removing fs lock...
+2018-12-12 00:04:49,965 INFO  [Thread-9] de.flapdoodle.embed.process.io.Slf4jLevel$3: 2018-12-12T00:04:49.965+0100 I CONTROL  [conn1] dbexit:  rc: 0
+2018-12-12 00:04:49,978 INFO  [Thread-3] de.flapdoodle.embed.process.io.Slf4jLevel$3: 2018-12-12T00:04:49.978+0100 I STORAGE  [conn3] shutdown: removing fs lock...
+2018-12-12 00:04:49,979 INFO  [Thread-3] de.flapdoodle.embed.process.io.Slf4jLevel$3: 2018-12-12T00:04:49.979+0100 I CONTROL  [conn3] dbexit:  rc: 0
+2018-12-12 00:04:50,056 INFO  [Thread-12] org.springframework.scheduling.concurrent.ExecutorConfigurationSupport: Shutting down ExecutorService 'taskExecutor'
+2018-12-12 00:04:50,056 INFO  [Thread-5] org.springframework.scheduling.concurrent.ExecutorConfigurationSupport: Shutting down ExecutorService 'taskExecutor'
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 40, Failures: 0, Errors: 0, Skipped: 3
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:36 min
+[INFO] Finished at: 2018-12-12T00:04:50+01:00
+[INFO] ------------------------------------------------------------------------
