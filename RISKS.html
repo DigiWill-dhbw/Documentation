@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Risks</title>
+
+    <style>
+        .low {background-color:green;}
+        .med {background-color:yellow;}
+        .high {background-color:red;}
+    </style>
+</head>
+<body>
+
+<h1>DigiWill Risks</h1>
+
+<table id="risks">
+    <tr>
+        <th>Risk Name</th>
+        <th>Risk Description</th>
+        <th>Risk Probability of Occurrence (1-10)</th>
+        <th>Risk Impact (1-10)</th>
+        <th>Risk Factor (1-100)</th>
+        <th>Risk Mitigation	Person in Charge of Tracking (not person who brought it up!!)</th>
+    </tr>
+
+    <tr>
+        <th>Short time Sickness</th>
+        <th>One of the team members gets sick for a short amount of time</th>
+        <th>4</th>
+        <th>1</th>
+        <th>WILL BE CALCULATED</th>
+        <th>Jannik</th>
+    </tr>
+</table>
+
+<script>
+
+    function changeColor(element, max){
+        let third = (max-1)/3;
+        if(element.innerHTML <= third){
+            element.classList.add("low");
+        }else if(element.innerHTML <= 2* third){
+            element.classList.add("med");
+        } else {
+            element.classList.add("high");
+        }
+    }
+    var table = document.getElementById("risks");
+    for (var i = 1, row; row = table.rows[i]; i++) {
+        //iterate through rows
+        //rows would be accessed using the "row" variable assigned in the for
+        let factor = row.cells[2].innerHTML * row.cells[3].innerHTML;
+        row.cells[4].innerHTML = factor;
+        changeColor(row.cells[2], 10);
+        changeColor(row.cells[3], 10);
+        changeColor(row.cells[4], 100);
+    //.innerHTML
+    }
+</script>
+
+</body>
+</html>
