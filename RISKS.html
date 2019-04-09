@@ -30,13 +30,23 @@
     </tr>
 
     <tr>
-        <td>Short time Sickness</td>
+        <td>Short time Sickness (<3 days)</td>
         <td>One of tde team members gets sick for a short amount of time</td>
         <td>4</td>
         <td>1</td>
         <td>WILL BE CALCULATED</td>
-        <td>Jannik</td>
-        <td></td>
+        <td>Christian</td>
+        <td>For time sensitive issues: Delegate issue to other team members</td>
+    </tr>
+
+    <tr>
+        <td>Long time Sickness (>3 days)</td>
+        <td>One of the team members gets sick for a long amount of time</td>
+        <td>2</td>
+        <td>7</td>
+        <td>WILL BE CALCULATED</td>
+        <td>Christian</td>
+        <td>Delegate issue to other team members and edit sprint scope</td>
     </tr>
 
     <tr>
@@ -46,7 +56,7 @@
         <td>5</td>
         <td>WILL BE CALCULATED</td>
         <td>Christian</td>
-        <td></td>
+        <td>Push regularly and get a replacement as fast as possible</td>
     </tr>
 
     <tr>
@@ -55,77 +65,67 @@
         <td>3</td>
         <td>3</td>
         <td>WILL BE CALCULATED</td>
-        <td>tbd</td>
-        <td></td>
+        <td>Robin</td>
+        <td>If we're unable to fix it in a timely manner: Remove it from the pipeline</td>
     </tr>
 	
 	<tr>
         <td>Dependency breaks</td>
-        <td>One or more dependencies stop working witd tde projects codebase or otder depencies</td>
+        <td>One or more dependencies stop working with the projects codebase or other decencies</td>
         <td>3</td>
-        <td>8</td>
+        <td>6</td>
         <td>WILL BE CALCULATED</td>
-        <td>tbd</td>
-        <td><!--  --></td>
+        <td>Morten</td>
+        <td>CI/CD Tools should catch such issues</td>
     </tr>
 	
     <tr>
         <td>Security issues</td>
         <td>Some feature or dependency has security issues which could be exploited</td>
         <td>5</td>
-        <td>7</td>
+        <td>8</td>
         <td>WILL BE CALCULATED</td>
-        <td>tbd</td>
-        <td></td>
+        <td>Morten</td>
+        <td>Use Snyk in our pipeline to check for vulnerabilities in dependencies. Act fast in vulnerabilities are found</td>
     </tr>
 	
 	<tr>
         <td>Scalability</td>
         <td>Code does not scale well and is not able to handle a growing userbase</td>
-        <td>7</td>
+        <td>4</td>
         <td>10</td>
         <td>WILL BE CALCULATED</td>
         <td>tbd</td>
-        <td></td>
+        <td>Consider using a Kubernetes cluster and load balancer</td>
     </tr>
 	
 	<tr>
-        <td>Spagettdi Code</td>
-        <td>Ill-conceived Code makes extending or fixing old and adding new features too complex</td>
+        <td>Bad and complex Code</td>
+        <td>Ill-conceived /-structered Code makes extending or fixing old features and adding new ones too complex</td>
         <td>6</td>
         <td>7</td>
         <td>WILL BE CALCULATED</td>
-        <td>tbd</td>
-        <td></td>
+        <td>Jannik</td>
+        <td>Use Codacy to check for bad code and employ continuous refactoring in the development process</td>
     </tr>
 	
 	<tr>
-        <td>Architectural  Issues</td>
-        <td>Some design decisions do not work out as tdey should have (e.g. because of new requirements)</td>
-        <td>4</td>
+        <td>Architectural Issues</td>
+        <td>Some design decisions do not work out as they should (e.g. because of new requirements)</td>
+        <td>3</td>
         <td>6</td>
         <td>WILL BE CALCULATED</td>
-        <td>tbd</td>
-        <td></td>
+        <td>Jannik</td>
+        <td>Keep the code clean and well structured to be able to refactor to adapt to changing requirements</td>
     </tr>
 	
 	<tr>
         <td>Framework Issues</td>
-        <td>The framework does not support sometding tde way we want to implement it...</td>
-        <td>2</td>
+        <td>The framework does not provide the necessary functionality for the intended feature</td>
+        <td>4</td>
         <td>8</td>
         <td>WILL BE CALCULATED</td>
-        <td>tbd</td>
-        <td></td>
-    </tr>
-
-    <tr>
-        <td>Long time Sickness</td>
-        <td>One of the team members gets sick for a long amount of time</td>
-        <td>2</td>
-        <td>7</td>
-        <td>WILL BE CALCULATED</td>
-        <td></td>
+        <td>Christian</td>
         <td></td>
     </tr>
 
@@ -133,10 +133,16 @@
         <td>University dropout</td>
         <td>One of the team members drops out of university</td>
         <td>1</td>
-        <td>8</td>
+        <td>9</td>
         <td>WILL BE CALCULATED</td>
-        <td></td>
-        <td></td>
+        <td>Christian</td>
+        <td>
+            <ul>
+                <li>Do regular knowledge sharing sessions.</li>
+                <li>Let team members know if it's probable that you might drop out.</li>
+                <li>In case of dropout: Decrease scope</li>
+            </ul>
+        </td>
     </tr>
 
     <tr>
@@ -145,27 +151,27 @@
         <td>1</td>
         <td>10</td>
         <td>WILL BE CALCULATED</td>
-        <td></td>
-        <td></td>
+        <td>Morten</td>
+        <td>Keep backups on build server</td>
     </tr>
 
     <tr>
         <td>Partial code loss</td>
-        <td>We loose some of our code due to laptop failure</td>
+        <td>We loose some of our code due to laptop failure or bad merging</td>
         <td>3</td>
         <td>5</td>
         <td>WILL BE CALCULATED</td>
-        <td></td>
+        <td>Morten</td>
         <td>Commit and push regularly</td>
     </tr>
 
     <tr>
-        <td>YouTrack fail</td>
+        <td>YouTrack failure</td>
         <td>We loose complete access to YouTrack</td>
         <td>3</td>
         <td>8</td>
         <td>WILL BE CALCULATED</td>
-        <td></td>
+        <td>Robin</td>
         <td>We should schedule regular backups</td>
     </tr>
 </table>
