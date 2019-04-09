@@ -8,7 +8,7 @@
         .low {background-color:green;}
         .med {background-color:yellow;}
         .high {background-color:red;}
-		
+
 		body {font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;}
 		table {border-collapse: collapse;}
 		table, td, th {border: 1px solid black;}
@@ -68,7 +68,7 @@
         <td>Robin</td>
         <td>If we're unable to fix it in a timely manner: Remove it from the pipeline</td>
     </tr>
-	
+
 	<tr>
         <td>Dependency breaks</td>
         <td>One or more dependencies stop working with the projects codebase or other decencies</td>
@@ -78,7 +78,7 @@
         <td>Morten</td>
         <td>CI/CD Tools should catch such issues</td>
     </tr>
-	
+
     <tr>
         <td>Security issues</td>
         <td>Some feature or dependency has security issues which could be exploited</td>
@@ -88,7 +88,7 @@
         <td>Morten</td>
         <td>Use Snyk in our pipeline to check for vulnerabilities in dependencies. Act fast in vulnerabilities are found</td>
     </tr>
-	
+
 	<tr>
         <td>Scalability</td>
         <td>Code does not scale well and is not able to handle a growing userbase</td>
@@ -98,7 +98,7 @@
         <td>tbd</td>
         <td>Consider using a Kubernetes cluster and load balancer</td>
     </tr>
-	
+
 	<tr>
         <td>Bad and complex Code</td>
         <td>Ill-conceived /-structered Code makes extending or fixing old features and adding new ones too complex</td>
@@ -108,7 +108,7 @@
         <td>Jannik</td>
         <td>Use Codacy to check for bad code and employ continuous refactoring in the development process</td>
     </tr>
-	
+
 	<tr>
         <td>Architectural Issues</td>
         <td>Some design decisions do not work out as they should (e.g. because of new requirements)</td>
@@ -118,7 +118,7 @@
         <td>Jannik</td>
         <td>Keep the code clean and well structured to be able to refactor to adapt to changing requirements</td>
     </tr>
-	
+
 	<tr>
         <td>Framework Issues</td>
         <td>The framework does not provide the necessary functionality for the intended feature</td>
@@ -147,7 +147,7 @@
 
     <tr>
         <td>Complete code loss</td>
-        <td>We loose out whole code base (GitHub & all Laptops fail)</td>
+        <td>We lose our whole code base (GitHub & all Laptops fail)</td>
         <td>1</td>
         <td>10</td>
         <td>WILL BE CALCULATED</td>
@@ -173,6 +173,16 @@
         <td>WILL BE CALCULATED</td>
         <td>Robin</td>
         <td>We should schedule regular backups</td>
+    </tr>
+
+    <tr>
+        <td>Server goes down</td>
+        <td>Our Server goes down because of several impacts (maintenance, hoster insolvency, natural desaster, etc.)</td>
+        <td>1</td>
+        <td>10</td>
+        <td>WILL BE CALCULATED</td>
+        <td></td>
+        <td>Depending on downtime we should switch to a new hoster</td>
     </tr>
 </table>
 
