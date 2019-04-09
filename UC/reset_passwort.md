@@ -27,7 +27,7 @@ N/A
 
 # 4. Preconditions
 
-User has an email with a link
+The user has received an email with a password reset link
 
 # 5. Postconditions
 
