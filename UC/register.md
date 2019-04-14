@@ -25,14 +25,14 @@ N/A
 N/A
 
 # 4. Preconditions
-The main precondition for this use case are:
+The main precondition for this use case is:
 
  1. The user needs a valid email address to register.
 
 # 5. Postconditions
 
 ## 5.1 Create new user credentials
-After entering the required information the user will get an email with a link to validate his email address. Afterwards he is allowed to login with his credentials.
+After entering the required information the user will get an email with a link to validate his email address. Afterwards he is allowed to login with his credentials and he has to setup his profile.
 
 # 6. Function Points
 
