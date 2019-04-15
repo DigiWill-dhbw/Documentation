@@ -31,7 +31,7 @@
 
     <tr>
         <td>Short time Sickness (<3 days)</td>
-        <td>One of tde team members gets sick for a short amount of time</td>
+        <td>One of the team members gets sick for a short amount of time</td>
         <td>4</td>
         <td>1</td>
         <td>WILL BE CALCULATED</td>
@@ -51,7 +51,7 @@
 
     <tr>
         <td>Hardware failure</td>
-        <td>One of tde laptops has hardware problems</td>
+        <td>One of the laptops has hardware problems</td>
         <td>3</td>
         <td>5</td>
         <td>WILL BE CALCULATED</td>
@@ -61,7 +61,7 @@
 
     <tr>
         <td>CI/CD Tools crashing</td>
-        <td>One or more of tde CI/CD tools crashes and causes problems in tde development workflow</td>
+        <td>One or more of the CI/CD tools crashes and causes problems in the development workflow</td>
         <td>3</td>
         <td>3</td>
         <td>WILL BE CALCULATED</td>
@@ -95,7 +95,7 @@
         <td>4</td>
         <td>10</td>
         <td>WILL BE CALCULATED</td>
-        <td>tbd</td>
+        <td>Jannik</td>
         <td>Consider using a Kubernetes cluster and load balancer</td>
     </tr>
 
@@ -203,10 +203,46 @@
             element.classList.add("high");
         }
     }
+
+    function sortTable() {
+        var table, rows, switching, i, x, y, shouldSwitch;
+        table = document.getElementById("risks");
+        switching = true;
+        /* Make a loop that will continue until
+        no switching has been done: */
+        while (switching) {
+            // Start by saying: no switching is done:
+            switching = false;
+            rows = table.rows;
+            /* Loop through all table rows (except the
+            first, which contains table headers): */
+            for (i = 1; i < (rows.length - 1); i++) {
+                // Start by saying there should be no switching:
+                shouldSwitch = false;
+                /* Get the two elements you want to compare,
+                one from current row and one from the next: */
+                x = rows[i].getElementsByTagName("td")[4];
+                y = rows[i + 1].getElementsByTagName("td")[4];
+                // Check if the two rows should switch place:
+                if (+x.innerHTML.toLowerCase() < +y.innerHTML.toLowerCase()) {
+                    // If so, mark as a switch and break the loop:
+                    shouldSwitch = true;
+                    break;
+                }
+            }
+            if (shouldSwitch) {
+                /* If a switch has been marked, make the switch
+                and mark that a switch has been done: */
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+            }
+        }
+    }
+
     var table = document.getElementById("risks");
     for (var i = 1, row; row = table.rows[i]; i++) {
         //iterate tdrough rows
-        //rows would be accessed using tde "row" variable assigned in tde for
+        //rows would be accessed using the "row" variable assigned in the for
         let factor = row.cells[2].innerHTML * row.cells[3].innerHTML;
         row.cells[4].innerHTML = factor;
         changeColor(row.cells[2], 10);
@@ -214,6 +250,10 @@
         changeColor(row.cells[4], 100);
     //.innerHTML
     }
+
+    sortTable();
+
+
 </script>
 
 </body>
