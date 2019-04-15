@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Risks</title>
+
+    <style>
+
+		body {font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;}
+		table {border-collapse: collapse;}
+		table, td, th {border: 1px solid black;}
+    </style>
+</head>
+<body>
+
+<h1>DigiWill - Time spent per use case</h1>
+
+<table id="risks">
+    <tr>
+        <th>Use case</th>
+        <th>Documentation</th>
+        <th>Implementation</th>
+        <th>Testing</th>
+        <th>Warm up time</th>
+        <th>Total</th>
+        <th>FP</th>
+    </tr>
+
+    <tr>
+        <td>Login + Logout</td>
+        <td>0:45</td>
+        <td>13:25</td>
+        <td>2:33</td>
+        <td></td>
+        <td>WILL BE CALCULATED</td>
+        <td>*</td>
+    </tr>
+
+    <tr>
+        <td>Email Action CRUD</td>
+        <td>3:00</td>
+        <td>7:46</td>
+        <td>3:43</td>
+        <td></td>
+        <td>WILL BE CALCULATED</td>
+        <td>*</td>
+    </tr>
+
+    <tr>
+        <td>Register</td>
+        <td>0:30</td>
+        <td>11:11</td>
+        <td></td>
+        <td></td>
+        <td>WILL BE CALCULATED</td>
+        <td>*</td>
+    </tr>
+
+    <tr>
+        <td>Life sign daemon</td>
+        <td>2:07</td>
+        <td>2:42</td>
+        <td>0:35</td>
+        <td></td>
+        <td>WILL BE CALCULATED</td>
+        <td>*</td>
+    </tr>
+
+    <tr>
+        <td>Send life sign</td>
+        <td></td>
+        <td>4:53</td>
+        <td>0:16</td>
+        <td></td>
+        <td>WILL BE CALCULATED</td>
+        <td>*</td>
+    </tr>
+
+    <tr>
+        <td>Admin User Overview</td>
+        <td></td>
+        <td>4:20</td>
+        <td></td>
+        <td></td>
+        <td>WILL BE CALCULATED</td>
+        <td>*</td>
+    </tr>
+
+</table>
+
+<script>
+
+
+    var table = document.getElementById("risks");
+    for (var i = 1, row; row = table.rows[i]; i++) {
+        //iterate trough rows
+        //rows would be accessed using the "row" variable assigned in the for
+        let sum = addTimes(row.cells[1].innerHTML, row.cells[2].innerHTML, row.cells[3].innerHTML, row.cells[4].innerHTML);
+        row.cells[5].innerHTML = sum;
+    }
+
+    // Convert a time in hh:mm format to minutes
+    function timeToMins(time) {
+        var b = (time || "0:00").split(':');
+        return b[0]*60 + +b[1];
+    }
+
+    // Convert minutes to a time in format hh:mm
+    // Returned value is in range 00  to 24 hrs
+    function timeFromMins(mins) {
+        function z(n){return (n<10? '0':'') + n;}
+        var h = (mins/60 |0) % 24;
+        var m = mins % 60;
+        return z(h) + ':' + z(m);
+    }
+
+    // Add two times in hh:mm format
+    function addTimes(t0, t1, t2, t3) {
+        return timeFromMins(timeToMins(t0) + timeToMins(t1) +  timeToMins(t2) +  timeToMins(t3));
+    }
+
+
+</script>
+
+</body>
+</html>
