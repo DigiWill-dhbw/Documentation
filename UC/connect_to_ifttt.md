@@ -31,7 +31,7 @@ The main precondition for this use case is:
 
 # 5. Postconditions
 
-## 5.1 Refresh sign of life status
+## 5.1 Connected with IFTTT
 After connecting with IFTTT the user will be able to trigger his applets with the DigiWill event of death.
 
 # 6. Function Points
