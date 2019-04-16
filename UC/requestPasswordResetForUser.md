@@ -9,8 +9,7 @@ As an admin I can request a password reset for a user so they receive a reset em
 N/A
 
 ## 1.3 Screenshots
-
-N/A
+![Activity Diagram](../Mockups/requestPasswordResetForUser.png)
 
 # 2. Flow of Events
 
