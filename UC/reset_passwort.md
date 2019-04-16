@@ -8,7 +8,7 @@ If the url is invalid there should be an appropriate information message for the
 
 ## 1.2 Mockups
 
-N/A
+![reset_password](../Mockups/reset_password.png)
 
 ## 1.3 Screenshots
 
@@ -27,7 +27,7 @@ N/A
 
 # 4. Preconditions
 
-The user has received an email with a password reset link
+User has an email with a link
 
 # 5. Postconditions
 
