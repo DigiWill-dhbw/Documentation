@@ -8,6 +8,8 @@ A registered user can adjust profile information like the amount of time when he
 ## 1.2 Mockups
 ![Edit profile](../Mockups/logout_1.png)
 
+![Edit profile 2](../Mockups/editProfile.png)
+
 ## 1.3 Screenshots
 
 N/A
