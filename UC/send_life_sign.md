@@ -8,6 +8,7 @@ This use case allows a user to send a sign of life to keep the service informed 
 ## 1.2 Mockups
 ![Login through app](../Mockups/android_lifesign_login.png)
 ![Send life sign through app](../Mockups/android_lifesign_mockup.png)
+![Send life sign success](../Mockups/android_lifesign_success.png)
 
 ## 1.3 Screenshots
 
