@@ -6,7 +6,7 @@
 When a user forgot his password he can request to receive a reset email.
 
 ## 1.2 Mockups
-N/A
+![Request password reset](../Mockups/request_password_reset.png)
 
 ## 1.3 Screenshots
 
