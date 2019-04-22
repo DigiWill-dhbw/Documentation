@@ -37,4 +37,8 @@ While entering his login credentials the user can decide by clicking on a checkb
 
 # 6. Function Points
 
-N/A
+To calulate the function points for a specific use case we used the [TINY TOOLS FP Calculator](http://groups.umd.umich.edu/cis/course.des/cis525/js/f00/harvey/FP_Calc.html)
+
+![Activity Diagram](../FunctionPoints/LoginLogout.png)
+
+> => 19.55 Function Points
