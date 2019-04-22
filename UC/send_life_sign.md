@@ -38,4 +38,12 @@ After pressing the sign of life button, the state of the user will be refreshed 
 
 # 6. Function Points
 
-N/A
+To calulate the function points for a specific use case we used the [TINY TOOLS FP Calculator](http://groups.umd.umich.edu/cis/course.des/cis525/js/f00/harvey/FP_Calc.html).
+
+### Domain Characteristic Table
+![domain table](../FunctionPoints/send_life_sign1.png)
+### Complexity Adjustment Table
+![complexity table](../FunctionPoints/send_life_sign2.png)
+
+> => 53.69
+
