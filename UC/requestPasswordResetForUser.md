@@ -33,4 +33,11 @@ The selected user should receive a reset email with a link that leads them to a 
 
 # 6. Function Points
 
-N/A
+To calulate the function points for a specific use case we used the [TINY TOOLS FP Calculator](http://groups.umd.umich.edu/cis/course.des/cis525/js/f00/harvey/FP_Calc.html).
+
+### Domain Characteristic Table
+![domain table](../FunctionPoints/requestPasswordResetForUser1.png)
+### Complexity Adjustment Table
+![complexity table](../FunctionPoints/requestPasswordResetForUser2.png)
+
+> => 39.9
