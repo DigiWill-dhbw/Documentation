@@ -36,8 +36,7 @@ After the system triggered configured activities the account is banned and must 
 # 6. Function Points
 To calulate the function points for a specific use case we used the [TINY TOOLS FP Calculator](http://groups.umd.umich.edu/cis/course.des/cis525/js/f00/harvey/FP_Calc.html).
 
-    Score:      15.6 Function Points.
-    Time spent: 120min.
-
 ![domain table](../FunctionPoints/sign_of_life_daemon_1.png)
 ![complexity table](../FunctionPoints/sign_of_life_daemon_2.png)
+
+> => 15.6 Function Points
