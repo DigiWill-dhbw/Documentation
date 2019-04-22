@@ -33,4 +33,11 @@ User has an email with a link
 
 # 6. Function Points
 
-N/A
+To calulate the function points for a specific use case we used the [TINY TOOLS FP Calculator](http://groups.umd.umich.edu/cis/course.des/cis525/js/f00/harvey/FP_Calc.html).
+
+### Domain Characteristic Table
+![domain table](../FunctionPoints/reset_password1.png)
+### Complexity Adjustment Table
+![complexity table](../FunctionPoints/reset_password2.png)
+
+> => 43.5
