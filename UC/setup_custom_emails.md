@@ -74,8 +74,8 @@ After confirming the deletion modal, the user will be redirected to the list ove
 To calulate the function points for a specific use case we used the [TINY TOOLS FP Calculator](http://groups.umd.umich.edu/cis/course.des/cis525/js/f00/harvey/FP_Calc.html).
 
 ### Domain Characteristic Table
-![domain table](../FunctionPoints/send_custom_emails_1.png)
+![domain table](../FunctionPoints/setup_custom_emails_1.png)
 ### Complexity Adjustment Table
-![complexity table](../FunctionPoints/send_custom_emails_2.png)
+![complexity table](../FunctionPoints/setup_custom_emails_2.png)
 
-> => 31.08 Function Points
+> => 77.6 Function Points
