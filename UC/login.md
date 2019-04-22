@@ -41,4 +41,4 @@ To calulate the function points for a specific use case we used the [TINY TOOLS 
 
 ![Activity Diagram](../FunctionPoints/LoginLogout.png)
 
-> => 19.55 Function Points
+> => 22.54 Function Points
