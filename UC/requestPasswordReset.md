@@ -36,9 +36,6 @@ If the email address exists in out database it should receive a reset email with
 
 To calulate the function points for a specific use case we used the [TINY TOOLS FP Calculator](http://groups.umd.umich.edu/cis/course.des/cis525/js/f00/harvey/FP_Calc.html).
 
-### Domain Characteristic Table
-![domain table](../FunctionPoints/requestPasswordReset1.PNG)
-### Complexity Adjustment Table
-![complexity table](../FunctionPoints/requestPasswordReset2.PNG)
+![domain table](../FunctionPoints/requestPasswordReset.png)
 
-> => 51.48
+> => 18.81
