@@ -39,8 +39,8 @@ After entering the required information the user will get an email with a link t
 To calulate the function points for a specific use case we used the [TINY TOOLS FP Calculator](http://groups.umd.umich.edu/cis/course.des/cis525/js/f00/harvey/FP_Calc.html).
 
 ### Domain Characteristic Table
-![domain table](../FunctionPoints/register1.png)
+![domain table](../FunctionPoints/register1.PNG)
 ### Complexity Adjustment Table
-![complexity table](../FunctionPoints/register2.png)
+![complexity table](../FunctionPoints/register2.PNG)
 
 > => 45.5
