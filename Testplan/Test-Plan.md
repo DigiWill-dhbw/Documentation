@@ -52,11 +52,12 @@ Items for Testing:
 ## 4. Outline of Planned Tests
 
 ### 4.1 Outline of Test Inclusions
+Unit testing the Java backend and ui testing of the Web frontend.
 
 ### 4.2 Outline of Other Candidates for Potential Inclusion
-
+Stress testing the application might be potential test cases but these are not in scope of our testing process yet.
 ### 4.3 Outline of Test Exclusions
-
+N / A
 ## 5. Test Approach
 
 ### 5.1 Initial Test-Idea Catalogs and Other Reference Sources
