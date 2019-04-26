@@ -70,12 +70,23 @@
 ## 1. Introduction
 
 ### 1.1 Purpose
+The purpose of the Iteration Test Plan is to gather all of the information necessary to plan and control the test effort for a given iteration. It describes the approach to testing the software, and is the top-level plan generated and used by managers to direct the test effort.
+This Test Plan for DigiWill supports the following objectives:
+* Identifies the items that should be targeted by the tests.
+* Identifies the motivation for and ideas behind the test areas to be covered.
+* Outlines the testing approach that will be used.
+* Identifies the required resources and provides an estimate of the test efforts.
+* Lists the deliverable elements of the test project.
 
 ### 1.2 Scope
-
+This document describes the used tests, as they are unittests and functionality testing.
 ### 1.3 Intended Audience
-
+This document is meant for internal use primarily.
 ### 1.4 Document Terminology and Acronyms
+* SRS - Software Requirements Specification
+* SOL - Sign of life
+* n/a - not applicable
+* tbd - to be determined
 
 ### 1.5 References
 
@@ -84,10 +95,16 @@
 ## 2. Evaluation Mission and Test Motivation
 
 ### 2.1 Background
+By testing our project, we intend to provide stability and safety for our project when the source code changes. The integration of the testing in our development process, allows us to be sure that only working versions of our software are deployed. The application is therefore always stable.
 
 ### 2.2 Evaluation Mission
-
+Our motivation in implementing tests came with beginning the software development, as changes from different contributers interfered and created errors. So we created tests to be informed of errors created in other parts of the project.
 ### 2.3 Test Motivators
+Our testing is motivated by:
+
+* technical risks
+* quality risks
+* find as most bugs as possible
 
 ## 3. Target Test Items
 
