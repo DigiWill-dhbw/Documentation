@@ -115,13 +115,21 @@ The listing below identifies those test items (software, hardware, and supportin
 
 Items for Testing:
 
-* Java backend
-* Web frontend
+* Backend
+* Web application
+* Mobile application
 
 ## 4. Outline of Planned Tests
 
 ### 4.1 Outline of Test Inclusions
-Unit testing the Java backend and ui testing of the Web frontend.
+Backend:
+* Unit testing
+
+Web application:
+* UI testing
+
+Mobile application:
+* UI testing
 
 ### 4.2 Outline of Other Candidates for Potential Inclusion
 Stress testing the application might be potential test cases but these are not in scope of our testing process yet.
@@ -177,25 +185,27 @@ N / A
 
 ## 7. Deliverables
 
-### 7.1 Test Evaluation Summaries
+### 7.1 Reporting on Test Coverage
+After building and testing the master branch the resulting coverage is uploaded to [codacy.com](https://app.codacy.com/project/DigiWill/DigiWill/dashboard).
 
-### 7.2 Reporting on Test Coverage
+[![Codacy Badge](https://api.codacy.com/project/badge/Coverage/43518fe6b862492eb945b71f57d521ce)](https://www.codacy.com/app/DigiWill/DigiWill?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=DigiWill-dhbw/DigiWill&amp;utm_campaign=Badge_Coverage)
 
-### 7.3 Perceived Quality Reports
+### 7.2 Perceived Quality Reports
+For quality reports we use [codacy.com](https://app.codacy.com/project/DigiWill/DigiWill/dashboard) and [lgtm.com](https://lgtm.com/projects/g/DigiWill-dhbw/DigiWill). They show errors in the code as well as other metrics. For every pull request the above tools are creating reports and bad quality reports must be fixed before merging is allowed.
 
-### 7.4 Incident Logs and Change Requests
+The quality report status is showed by the following badges: 
 
-### 7.5 Smoke Test Suite and Supporting Test Scripts
+| Badge | Description |
+|---|---|
+| [![Codacy Badge](https://api.codacy.com/project/badge/Grade/5c06f80d7ed24ae784247cb31d8c6a58)](https://app.codacy.com/app/DigiWill/DigiWill?utm_source=github.com&utm_medium=referral&utm_content=DigiWill-dhbw/DigiWill&utm_campaign=Badge_Grade_Dashboard) | Codacy quality report |
+| [![Language grade: Java](https://img.shields.io/lgtm/grade/java/g/DigiWill-dhbw/DigiWill.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/DigiWill-dhbw/DigiWill/context:java) | Lgtm Java language grade |
+| [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/DigiWill-dhbw/DigiWill.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/DigiWill-dhbw/DigiWill/context:javascript) | Lgtm JavaScript language grade |
 
-### 7.6 Additional Work Products
+### 7.3 Incident Logs and Change Requests
+The above mentioned tools are integrated in our pull requests on Github. If a Jenkins build or quality checks fail the merge function is blocked. In addition at least one developer needs to review the pull request.
 
-#### 7.6.1 Detailed Test Results
-
-#### 7.6.2 Additional Automated Functional Test Scripts
-
-#### 7.6.3 Test Guidelines
-
-#### 7.6.4 Traceability Matrices
+<img src="pull_request.png"
+     alt="Pull Request Image"/>
 
 ## 8. Testing Workflow
 
