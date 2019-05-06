@@ -71,33 +71,16 @@ Stress testing the application might be potential test cases but these are not i
 N / A
 ## 5. Test Approach
 
-### 5.1 Unit Testing
+### 5.1 Testing Techniques and Types
 
-### 5.2 User Interface Testing
+#### 5.1.1 Unit Testing
+TODO
 
-#### 5.2.1 Data and Database Integrity Testing
+#### 5.1.2 User Interface Testing
+TODO
 
-#### 5.2.2 Function Testing
-
-#### 5.2.3 Business Cycle Testing
-
-#### 5.2.4 User Interface Testing
-
-#### 5.2.5 Performance Profiling
-
-#### 5.2.6 Load Testing
-
-#### 5.2.7 Stress Testing
-
-#### 5.2.8 Volume Testing
-
-#### 5.2.9 Security and Access Control Testing
-
-#### 5.2.10 Failover and Recovery Testing
-
-#### 5.2.11 Configuration Testing
-
-#### 5.2.12 Installation Testing
+#### 5.1.3 Stress Testing
+TODO
 
 ## 6. Entry and Exit Criteria
 
@@ -152,19 +135,34 @@ Every developer can run tests inside the IDE manually. Whenever new commits are 
 ## 9. Environmental Needs
 
 ### 9.1 Base System Hardware
+TODO
 
 ### 9.2 Base Software Elements in the Test Environment
+TODO
 
 ### 9.3 Productivity and Support Tools
+TODO
 
 ### 9.4 Test Environment Configurations
+TODO
 
 ## 10. Responsibilities, Staffing, and Training Needs
 
 ### 10.1 People and Roles
+| Role | Minimum Resources Recommended | Specific Responsibilities |
+|------|-------------------------------|---------------------------|
+| Test Manager | 1 | Ensures that tests are complete and designed correctly |
+| Test Designer | 1 | Defines how and which tests should be implmemented | 
+| Test System Administrator | 1 | Ensures test environment and assets are maintained | 
+| Tester | 3 | Implement tests for new functionality |
 
 ### 10.2 Staffing and Training Needs
+n/a
 
 ## 11. Iteration Milestones
+The goal is to keep over **70%** code coverage.
 
 ## 12. Risks, Dependencies, Assumptions, and Constraints
+| Risk | Mitigation Strategy | Contingency |
+|------|---------------------|-------------|
+| UI Test Runner is not working | Search for different UI Test libraries | Replace test configuration |
