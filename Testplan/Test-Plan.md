@@ -29,8 +29,7 @@ This document is meant for internal use primarily.
 * [Use Case Diagram](https://github.com/DigiWill-dhbw/Documentation/blob/master/SRS/UC_Diagram.png)
 * [SRS](https://github.com/DigiWill-dhbw/Documentation/blob/master/SRS/SRS.md)
 * [SAD](https://github.com/DigiWill-dhbw/Documentation/blob/master/SAD/SAD.md)
-### 1.6 Document Structure
-N / A
+
 ## 2. Evaluation Mission and Test Motivation
 
 ### 2.1 Background
@@ -72,9 +71,9 @@ Stress testing the application might be potential test cases but these are not i
 N / A
 ## 5. Test Approach
 
-### 5.1 Initial Test-Idea Catalogs and Other Reference Sources
+### 5.1 Unit Testing
 
-### 5.2 Testing Techniques and Types
+### 5.2 User Interface Testing
 
 #### 5.2.1 Data and Database Integrity Testing
 
@@ -105,27 +104,32 @@ N / A
 ### 6.1 Test Plan
 
 #### 6.1.1 Test Plan Entry Criteria
+After a successfull build the testprocess will be executed.
 
 #### 6.1.2 Test Plan Exit Criteria
-
-#### 6.1.3 Suspension and Resumption Criteria
-
-### 6.2 Test Cycles
-
-#### 6.2.1 Test Cycle Entry Criteria
-
-#### 6.2.2 Test Cycle Exit Criteria
-
-#### 6.2.3 Test Cycle Abnormal Termination
+All tests pass without throwing an error.
 
 ## 7. Deliverables
 
-### 7.1 Reporting on Test Coverage
+### 7.1 Test Evaluation Summaries
+We are using our self hosted <a href="https://jenkins.robinkuck.de/blue/organizations/jenkins/DigiWill/activity/">Jenkins server</a> to build, run tests and deploy our application automatically.
+
+The picture below shows our recent Jenkins builds:
+
+<img src="jenkins_activity.png"
+     alt="Recent Jenkins builds"/>
+
+Our Jenkins execution steps called pipeline are designed as follows:
+
+<img src="jenkins_pipeline.png"
+     alt="Jenkins pipeline"/>
+
+### 7.2 Reporting on Test Coverage
 After building and testing the master branch the resulting coverage is uploaded to [codacy.com](https://app.codacy.com/project/DigiWill/DigiWill/dashboard).
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Coverage/43518fe6b862492eb945b71f57d521ce)](https://www.codacy.com/app/DigiWill/DigiWill?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=DigiWill-dhbw/DigiWill&amp;utm_campaign=Badge_Coverage)
 
-### 7.2 Perceived Quality Reports
+### 7.3 Perceived Quality Reports
 For quality reports we use [codacy.com](https://app.codacy.com/project/DigiWill/DigiWill/dashboard) and [lgtm.com](https://lgtm.com/projects/g/DigiWill-dhbw/DigiWill). They show errors in the code as well as other metrics. For every pull request the above tools are creating reports and bad quality reports must be fixed before merging is allowed.
 
 The quality report status is showed by the following badges: 
@@ -136,13 +140,14 @@ The quality report status is showed by the following badges:
 | [![Language grade: Java](https://img.shields.io/lgtm/grade/java/g/DigiWill-dhbw/DigiWill.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/DigiWill-dhbw/DigiWill/context:java) | Lgtm Java language grade |
 | [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/DigiWill-dhbw/DigiWill.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/DigiWill-dhbw/DigiWill/context:javascript) | Lgtm JavaScript language grade |
 
-### 7.3 Incident Logs and Change Requests
+### 7.4 Incident Logs and Change Requests
 The above mentioned tools are integrated in our pull requests on Github. If a Jenkins build or quality checks fail the merge function is blocked. In addition at least one developer needs to review the pull request.
 
 <img src="pull_request.png"
      alt="Pull Request Image"/>
 
 ## 8. Testing Workflow
+Every developer can run tests inside the IDE manually. Whenever new commits are pushed or a new pull request is created all tests will be executed automatically. 
 
 ## 9. Environmental Needs
 
