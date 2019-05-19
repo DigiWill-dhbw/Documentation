@@ -51,7 +51,6 @@ Items for Testing:
 
 * Backend
 * Web application
-* Mobile application
 
 ## 4. Outline of Planned Tests
 
@@ -62,11 +61,11 @@ Backend:
 Web application:
 * UI testing
 
-Mobile application:
-* UI testing
+Backend/Web application:
+* Load testing
 
 ### 4.2 Outline of Other Candidates for Potential Inclusion
-Stress testing the application might be potential test cases but these are not in scope of our testing process yet.
+Stress testing the application might be a potential test case but it is not in scope of our testing process yet.
 ### 4.3 Outline of Test Exclusions
 N / A
 ## 5. Test Approach
@@ -74,13 +73,44 @@ N / A
 ### 5.1 Testing Techniques and Types
 
 #### 5.1.1 Unit Testing
-TODO
+The goal of unit tests is to isolate pieces of testable code from each other and test them separately. We use JUnit for unit testing.
+
+| | Description |
+|-|-------------|
+| Technique Objective | Make sure that code units work independently. |
+| Technique | Implement test methods using JUnit Framework and its annotations. |
+| Oracles | Console Output, Logs (Jenkins), Code Coverage by Jacoco (Jenkins)/Codacy |
+| Required Tools | Intellij with Maven |
+| Success Criteria | All tests pass; Code Coverage is above 70% |
+| Special Considerations | - |
 
 #### 5.1.2 User Interface Testing
-TODO
+The goal of UI testing is to verify the interaction of a client with the software. It also ensures that the UI objects work as expected.
 
-#### 5.1.3 Stress Testing
-TODO
+For our automated UI tests we are using Cucumber and Selenium.
+
+| | Description |
+|-|-------------|
+| Technique Objective | UI operations (clicking buttons, fill text fields, etc.) |
+| Technique | Writing Gherkin <code>.feature</code> files to specify steps and expected results. The various interactions are emulated.  |
+| Oracles | Specific state in the user interface has been reached which can be detected by checking for GUI elements like buttons, labels, etc. |
+| Required Tools | Intellij with Maven + Chrome/Firefox installed |
+| Success Criteria | All ui tests pass |
+| Special Considerations | For Windows and Linux we provide a Chrome/Firefox Web Driver in our repository. |
+
+#### 5.1.3 Load Testing
+Load testing is a kind of Performance Testing which determines the performance of a system under real-life load conditions. This testing helps determine how the application behaves when multiple users access it simultaneously.
+
+For our load tests we are using Apache JMeter. With the JMeter Maven Plugin we can integrate the JMeter test execution in our Jenkins pipeline. This ensures that the response times are not affected by Network utilization because our Jenkins is running on the same host as our system.
+
+| | Description |
+|-|-------------|
+| Technique Objective | Make sure that  |
+| Technique | Writing a JMeter Script (a file containing a technical description of tests) using Apache JMeter |
+| Oracles | Response times of tested requests. |
+| Required Tools | Intellij with Maven (for running in Non-GUI mode) |
+| Success Criteria | The response times for 50 simultaneous Threads is not much higher than for one Thread |
+| Special Considerations | - |
 
 ## 6. Entry and Exit Criteria
 
