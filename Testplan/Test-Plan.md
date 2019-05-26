@@ -165,16 +165,33 @@ Every developer can run tests inside the IDE manually. Whenever new commits are 
 ## 9. Environmental Needs
 
 ### 9.1 Base System Hardware
-TODO
+The following table sets forth the system resources for the test effort presented in this Test Plan.
+
+| Resource | Quantity | Name and Type |
+|----------|----------|---------------|
+| CI/CD server | 1 | <a href="https://contabo.de">Contabo VPS M SSD</a> |
+| Local test machine | 1 | Notebook (Lenovo T570) |
 
 ### 9.2 Base Software Elements in the Test Environment
-TODO
+The following base software elements are required in the test environment for this Test Plan.
+
+| Software Element Name | Type and Other Notes |
+|-----------------------|----------------------|
+| JUnit | Unit Testing Library |
+| IntelliJ | Local Test Runner/IDE | 
+| Cucumber | Readable test definitions |
+| Selenium | Web application Testing library |
 
 ### 9.3 Productivity and Support Tools
-TODO
+The following tools will be employed to support the test process for this Test Plan.
 
-### 9.4 Test Environment Configurations
-TODO
+| Tool Category or Type | Tool Brand Name |
+|-----------------------|-----------------|
+| Repository Hoster | <a href="https://github.com">GitHub</a> |
+| Test Coverage Monitor | <a href="https://sonarcloud.io">SonarCloud</a> |
+| CI/CD Service | <a href="https://jenkins.io/">Jenkins</a> |
+| Metrics Tool | <a href="https://sonarcloud.io">SonarCloud</a> |
+| Metrics Tool | <a href="https://app.codacy.com">Codacy</a> |
 
 ## 10. Responsibilities, Staffing, and Training Needs
 
