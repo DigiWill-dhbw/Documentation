@@ -77,10 +77,8 @@ We always try to classify our classes in modules. The module `de.digiwill.model`
 TODO
 
 ## 7. Deployment View
-TODO
 
-## 8. Implementation View
-n/a
+![Deployment View](./deployment_view.png)
 
 ## 9. Data View
 Our database structure in model classes:
