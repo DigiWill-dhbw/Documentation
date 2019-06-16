@@ -83,16 +83,17 @@ TODO
 n/a
 
 ## 9. Data View
-Our database structure visualized:
-
-![Database](../db_schema.png)
-
 Our database structure in model classes:
 
-![Database classes](../db_schema_classes.png)
+![Database](../db_schema.png)
 
 ## 10. Size and Performance
 n/a
 
 ## 11. Quality/Metrics
 We are using Jenkins as an continuous integration tool to ensure a high quality of our development process. Whenever there is a new commit to a pull request or the master branch it automatically builds the project and executes all tests. The Jenkins build result will be displayed beside each commit on Github.
+In addition SonarQube and Codacy are used in our pipeline. Each pull request/commit is checked by both tools. To improve our code quality we are focusing on: 
+* Test Coverage: A high coverage ensures that existing functionality can not break during the development process. The coverage is calculated by the Jacoco Maven Plugin and the plugin results are pushed to SonarQube.
+* Reducing the amount of Bugs/Issues/Code Smells raised by SonarQube.
+
+The SonarQube Metrics as well as the Pull Request Labels from Codacy are very helpful for improving our code quality and solving problem spots.
