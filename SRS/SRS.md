@@ -20,64 +20,64 @@
 
 ### Table of Contents
 
-- [1 Introduction](#1-introduction)
-	- [1.1 Purpose](#11-purpose)
-	- [1.2 Scope](#12-scope)
-	- [1.3 Definitions, Acronyms and Abbreviations](#13-definitions-acronyms-and-abbreviations)
-	- [1.4 References](#14-references)
-	- [1.5 Overview](#15-overview)
-- [2 Overall Description](#2-overall-description)
-	- [2.1 Vision](#21-vision)
-	- [2.2 Product perspective](#22-product-perspective)
-	- [2.3 Constraints](#23-constraints)
-	- [2.4 User characteristics](#24-user-characteristics)
-	- [2.5 Dependencies](#25-dependencies)
-- [3 Specific Requirements](#3-specific-requirements)
-	- [3.1 Functionality - Backend](#31-functionality-backend)
-		- [3.1.1. Sign of life daemon](#311-sign-of-life-daemon)
-		- [3.1.2 Email daemon](#312-email-daemon)
-	- [3.2 Functionality - Browser based Frontend](#32-functionality-browser-based-frontend)
-		- [3.2.1 Log in](#321-log-in)
-		- [3.2.2 Reset password](#322-reset-password)
-		- [3.2.3 Set up basic information and parameters](#323-set-up-basic-information-and-parameters)
-		- [3.2.4 Prepare email](#324-prepare-email)
-		- [3.2.5 Set up 2FA](#325-set-up-2fa)
-		- [3.2.6 Send sign of life](#326-send-sign-of-life)
-	- [3.3 Functionality - Android App](#33-functionality-android-app)
-		- [3.3.1 Log in](#331-log-in)
-		- [3.2.2 Send sign of life](#322-send-sign-of-life)
-	- [3.4 Usability](#34-usability)
-		- [3.2.1 Ease of use - Setting up](#321-ease-of-use-setting-up)
-		- [3.2.2 Signs of life](#322-signs-of-life)
-	- [3.5 Reliability](#35-reliability)
-		- [3.5.1 Sign of life uptime](#351-sign-of-life-uptime)
-		- [3.5.2 Initiation of actions](#352-initiation-of-actions)
-	- [3.6 Performance](#36-performance)
-	- [3.6.1 Live interaction](#361-live-interaction)
-	- [3.6.2 Emails](#362-emails)
-	- [3.7 Supportability](#37-supportability)
-		- [3.7.1 Code](#371-code)
-		- [3.7.2 Git Commits](#372-git-commits)
-	- [3.8 Design Constraints](#38-design-constraints)
-		- [3.8.1 MVC architecture](#381-mvc-architecture)
-		- [3.8.2 Git](#382-git)
-		- [3.8.3 Security](#383-security)
-	- [3.9 Online User Documentation and Help System Requirements](#39-online-user-documentation-and-help-system-requirements)
-	- [3.10 Purchased Components](#310-purchased-components)
-	- [3.11 Interfaces](#311-interfaces)
-		- [3.11.1 User Interfaces](#3111-user-interfaces)
-			- [3.11.1.1 Website](#31111-website)
-			- [3.11.1.2 Android App](#31112-android-app)
-		- [3.11.2 Hardware Interfaces](#3112-hardware-interfaces)
-		- [3.11.3 Software Interfaces](#3113-software-interfaces)
-			- [3.11.3.1 MongoDB](#31131-mongodb)
-			- [3.11.3.2 Mail Server](#31132-mail-server)
-			- [3.11.3.3 IFTTT](#31133-ifttt)
-		- [3.11.4 Communications Interfaces](#3114-communications-interfaces)
-	- [3.12 Licensing Requirements](#312-licensing-requirements)
-	- [3.13 Legal, Copyright, and Other Notices](#313-legal-copyright-and-other-notices)
-	- [3.14 Applicable Standards](#314-applicable-standards)
-- [4 Supporting Information](#4-supporting-information)
+- [Software Requirements Specification](#software-requirements-specification)
+		- [Revision History](#revision-history)
+		- [Table of Contents](#table-of-contents)
+	- [Software Requirements Specification](#software-requirements-specification-1)
+	- [1 Introduction](#1-introduction)
+		- [1.1 Purpose](#11-purpose)
+		- [1.2 Scope](#12-scope)
+		- [1.3 Definitions, Acronyms and Abbreviations](#13-definitions-acronyms-and-abbreviations)
+		- [1.4 References](#14-references)
+		- [1.5 Overview](#15-overview)
+	- [2 Overall Description](#2-overall-description)
+		- [2.1 Vision](#21-vision)
+		- [2.2 Product perspective](#22-product-perspective)
+		- [2.3 Constraints](#23-constraints)
+		- [2.4 User characteristics](#24-user-characteristics)
+		- [2.5 Dependencies](#25-dependencies)
+	- [3 Specific Requirements](#3-specific-requirements)
+		- [3.1 Functionality - Backend](#31-functionality---backend)
+			- [3.1.1. Sign of life daemon](#311-sign-of-life-daemon)
+			- [3.1.2 Email daemon](#312-email-daemon)
+		- [3.2 Functionality - Browser based Frontend](#32-functionality---browser-based-frontend)
+			- [3.2.1 Log in + Log out](#321-log-in--log-out)
+			- [3.2.2 Reset password](#322-reset-password)
+			- [3.2.3 Edit profile information](#323-edit-profile-information)
+			- [3.2.4 Setup emails](#324-setup-emails)
+			- [3.2.5 Set up 2FA](#325-set-up-2fa)
+			- [3.2.6 Send sign of life](#326-send-sign-of-life)
+		- [3.3 Usability](#33-usability)
+			- [3.3.1 Ease of use - Setting up](#331-ease-of-use---setting-up)
+			- [3.3.2 Signs of life](#332-signs-of-life)
+		- [3.4 Reliability](#34-reliability)
+			- [3.4.1 Sign of life uptime](#341-sign-of-life-uptime)
+			- [3.4.2 Initiation of actions](#342-initiation-of-actions)
+		- [3.5 Performance](#35-performance)
+			- [3.5.1 Live interaction](#351-live-interaction)
+			- [3.5.2 Emails](#352-emails)
+		- [3.6 Supportability](#36-supportability)
+			- [3.6.1 Code](#361-code)
+			- [3.6.2 Git Commits](#362-git-commits)
+		- [3.7 Design Constraints](#37-design-constraints)
+			- [3.7.1 MVC architecture](#371-mvc-architecture)
+			- [3.7.2 Git](#372-git)
+			- [3.7.3 Security](#373-security)
+		- [3.8 Online User Documentation and Help System Requirements](#38-online-user-documentation-and-help-system-requirements)
+		- [3.9 Purchased Components](#39-purchased-components)
+		- [3.10 Interfaces](#310-interfaces)
+			- [3.10.1 User Interfaces](#3101-user-interfaces)
+				- [3.10.1.1 Website](#31011-website)
+				- [3.10.1.2 Android App](#31012-android-app)
+			- [3.10.2 Hardware Interfaces](#3102-hardware-interfaces)
+			- [3.10.3 Software Interfaces](#3103-software-interfaces)
+				- [3.10.3.1 MongoDB](#31031-mongodb)
+				- [3.10.3.2 Mail Server](#31032-mail-server)
+				- [3.10.3.3 IFTTT](#31033-ifttt)
+			- [3.11.4 Communications Interfaces](#3114-communications-interfaces)
+		- [3.12 Licensing Requirements](#312-licensing-requirements)
+		- [3.14 Applicable Standards](#314-applicable-standards)
+	- [4 Supporting Information](#4-supporting-information)
 
 <!--- [1. Introduction](#1-introduction)         
   - [1.1 Purpose](#11-purpose)     
@@ -85,31 +85,64 @@
   - [1.3 Definitions, Acronyms and Abbreviations](#13-definitions-acronyms-and-abbreviations)     
   - [1.4 References](#14-references)     
   - [1.5 Overview](#15-overview)     
-- [2. Overall Description](#2-overall-description)    
-- [3. Specific Requirements](#3-specific-requirements)
-  - [3.1 Functionality](#31-functionality)
-    - [3.1.1 Functional Requirement One](#311-functional-requirement-one)     
-  - [3.2 Usability  ](#32-usability)   
-    - [3.2.1 Usability Requirement One](#321-usability-requirement-one)          
-  - [3.3 Reliability](#33-reliability)     
-      - [3.3.1 Reliability Requirement One](#331-reliability-requirement-one)          
-  - [3.4 Performance](#34-performance)     
-      - [3.4.1 Performance Requirement One](#341-performance-requirement-one)           
-  - [3.5 Supportability](#35-supportability)     
-      - [3.5.1 Supportability Requirement One](#351-supportability-requirement-one)         
-  - [3.6 Design Constraints](#36-design-constraints)     
-    - [3.6.1 Design Constraint One](#361-design-constraint-one)           
-  - [3.7 Online User Documentation and Help System Requirements](#37-online-user-documentation-and-help-system-requirements)     
-  - [3.8 Purchased Components](#38-purchased-components)     
-  - [3.9 Interfaces](#39-interfaces)     
-    - [3.9.1 User Interfaces](#391-user-interfaces)
-    - [3.9.2 Hardware Interfaces](#392-hardware-interfaces)
-    - [3.9.3 Software Interfaces](#393-software-interfaces)
-    - [3.9.4 Communications Interfaces](#394-communications-interfaces)          
-    - [3.10 Licensing Requirements](#310-licensing-requirements)    
-    - [3.11 Legal, Copyright and Other Notices](#311-legal-copyright-and-other-notices)     
-    - [3.12 Applicable Standards](#312-applicable-standards)     
-- [4. Supporting Information](#4-supporting-information)    --->
+- [Software Requirements Specification](#software-requirements-specification)
+		- [Revision History](#revision-history)
+		- [Table of Contents](#table-of-contents)
+	- [Software Requirements Specification](#software-requirements-specification-1)
+	- [1 Introduction](#1-introduction)
+		- [1.1 Purpose](#11-purpose)
+		- [1.2 Scope](#12-scope)
+		- [1.3 Definitions, Acronyms and Abbreviations](#13-definitions-acronyms-and-abbreviations)
+		- [1.4 References](#14-references)
+		- [1.5 Overview](#15-overview)
+	- [2 Overall Description](#2-overall-description)
+		- [2.1 Vision](#21-vision)
+		- [2.2 Product perspective](#22-product-perspective)
+		- [2.3 Constraints](#23-constraints)
+		- [2.4 User characteristics](#24-user-characteristics)
+		- [2.5 Dependencies](#25-dependencies)
+	- [3 Specific Requirements](#3-specific-requirements)
+		- [3.1 Functionality - Backend](#31-functionality---backend)
+			- [3.1.1. Sign of life daemon](#311-sign-of-life-daemon)
+			- [3.1.2 Email daemon](#312-email-daemon)
+		- [3.2 Functionality - Browser based Frontend](#32-functionality---browser-based-frontend)
+			- [3.2.1 Log in + Log out](#321-log-in--log-out)
+			- [3.2.2 Reset password](#322-reset-password)
+			- [3.2.3 Edit profile information](#323-edit-profile-information)
+			- [3.2.4 Setup emails](#324-setup-emails)
+			- [3.2.5 Set up 2FA](#325-set-up-2fa)
+			- [3.2.6 Send sign of life](#326-send-sign-of-life)
+		- [3.3 Usability](#33-usability)
+			- [3.3.1 Ease of use - Setting up](#331-ease-of-use---setting-up)
+			- [3.3.2 Signs of life](#332-signs-of-life)
+		- [3.4 Reliability](#34-reliability)
+			- [3.4.1 Sign of life uptime](#341-sign-of-life-uptime)
+			- [3.4.2 Initiation of actions](#342-initiation-of-actions)
+		- [3.5 Performance](#35-performance)
+			- [3.5.1 Live interaction](#351-live-interaction)
+			- [3.5.2 Emails](#352-emails)
+		- [3.6 Supportability](#36-supportability)
+			- [3.6.1 Code](#361-code)
+			- [3.6.2 Git Commits](#362-git-commits)
+		- [3.7 Design Constraints](#37-design-constraints)
+			- [3.7.1 MVC architecture](#371-mvc-architecture)
+			- [3.7.2 Git](#372-git)
+			- [3.7.3 Security](#373-security)
+		- [3.8 Online User Documentation and Help System Requirements](#38-online-user-documentation-and-help-system-requirements)
+		- [3.9 Purchased Components](#39-purchased-components)
+		- [3.10 Interfaces](#310-interfaces)
+			- [3.10.1 User Interfaces](#3101-user-interfaces)
+				- [3.10.1.1 Website](#31011-website)
+				- [3.10.1.2 Android App](#31012-android-app)
+			- [3.10.2 Hardware Interfaces](#3102-hardware-interfaces)
+			- [3.10.3 Software Interfaces](#3103-software-interfaces)
+				- [3.10.3.1 MongoDB](#31031-mongodb)
+				- [3.10.3.2 Mail Server](#31032-mail-server)
+				- [3.10.3.3 IFTTT](#31033-ifttt)
+			- [3.11.4 Communications Interfaces](#3114-communications-interfaces)
+		- [3.12 Licensing Requirements](#312-licensing-requirements)
+		- [3.14 Applicable Standards](#314-applicable-standards)
+	- [4 Supporting Information](#4-supporting-information)
 
 
 ## Software Requirements Specification
@@ -181,7 +214,7 @@ The main function of the service, detecting someones death and carrying out acti
 
 ### 3.1 Functionality - Backend
 
-#### 3.1.1. Sign of life daemon
+#### 3.1.1. [Sign of life daemon](../UC/sign_of_life_daemon.md)
 The sign of life daemon periodically checks the the duration since the last sign of life for every users and if necessary initiates actions the user wants the service to take after a certain duration. (e.g. Sends a task to the Email daemon to send out specified emails)
 
 #### 3.1.2 Email daemon
@@ -193,34 +226,26 @@ Where application development tools, such as requirements tools, modeling tools,
 
 ### 3.2 Functionality - Browser based Frontend
 
-#### 3.2.1 Log in
-The user can log into the web interface using an alias / email address and a password. If the user enabled 2FA he/she will also need a 2FA code.
+#### 3.2.1 [Log in](../UC/login.md) + [Log out](../UC/logout.md)
+The user can log into the web interface using an alias / email address and a password. If the user enabled 2FA he/she will also need a 2FA code. 
+Logically, he should also be able to log out.
 
-#### 3.2.2 Reset password
+#### 3.2.2 [Reset password](../UC/requestPasswordReset.md)
 The user can reset their password by clicking a "Rest password" button on the log in page. He/she will then receive an email with instructions to set up a new password.
 
-#### 3.2.3 Set up basic information and parameters
+#### 3.2.3 [Edit profile information](../UC/edit_profile_information.md)
 The user can specify after how many days of not receiving a sign of life the service should send an email / notification / call to remind the user. The user can also specify after how many days the service should presume the user is dead. He/she can edit their email address, physical address, country of residence and maintain connections / log in credentials for social media or other services DigiWill should interact with.
 
-#### 3.2.4 Prepare email
+#### 3.2.4 [Setup emails](../UC/setup_custom_emails.md)
 The user can write emails and specify recipients. He/she can also specify how long after the presumed death the emails should be send out.
 
 #### 3.2.5 Set up 2FA
 The user can set up two factor authentication using an app like Google Authenticator or Authy.
 
 #### 3.2.6 Send sign of life
-The user can send a sign of life to the service by pressing a button. If the user has enabled 2FA in addition to the button a text input field will appear. Pressing the button will check the entered 2FA code. If the code was correct this counts as a sign of life.
+The user can [send a sign of life](../UC/send_life_sign.md) to the service by pressing a button. If the user has enabled 2FA in addition to the button a text input field will appear. Pressing the button will check the entered 2FA code. If the code was correct this counts as a sign of life.
 
-### 3.3 Functionality - Android App
-Since the Android app is just a stretch goal these functions might not be implemented
-
-#### 3.3.1 Log in
-The user can log into the app using an alias / email address and a password.
-
-#### 3.2.2 Send sign of life
-The user can send a sign of life to the service by simply pressing a button. If the user has enabled 2FA in addition to the button a text input field will appear. Pressing the button will check the entered 2FA code. If the code was correct this counts as a sign of life.
-
-### 3.4 Usability
+### 3.3 Usability
 
 <!---\[This section should include all of those requirements that affect usability. For example,
 
@@ -230,15 +255,15 @@ The user can send a sign of life to the service by simply pressing a button. If 
 
 •               specify requirement to conform to common usability standards, such as IBM’s CUA standards Microsoft’s GUI standards\]--->
 
-#### 3.2.1 Ease of use - Setting up
+#### 3.3.1 Ease of use - Setting up
 
 The service should be intuitive and easy to use. It shouldn't require any training and shouldn't require the user to read a long manual. Setting up an account and specifying actions in ones will should be easy and straight forward.
 
-#### 3.2.2 Signs of life
+#### 3.3.2 Signs of life
 
 Letting the service know that you're still alive should be as easy as possible and as fast as possible. It should take less than a minute while being hassle free or even fun.
 
-### 3.5 Reliability
+### 3.4 Reliability
 
 <!--\[Requirements for reliability of the system should be specified here. Some suggestions follow:
 
@@ -254,13 +279,13 @@ Letting the service know that you're still alive should be as easy as possible a
 
 •               Bugs or Defect Rate—categorized in terms of minor, significant, and critical bugs: the requirement(s) must define what is meant by a “critical” bug; for example, complete loss of data or a complete inability to use certain parts of the system’s functionality.\]--->
 
-#### 3.5.1 Sign of life uptime
+#### 3.4.1 Sign of life uptime
 The ability to send a sign of life to the service should be available 95% of the time. And should never be unavailable for longer than 3 hours at a time (MTTR).
 
-#### 3.5.2 Initiation of actions
+#### 3.4.2 Initiation of actions
 Actions the user specified for the event of their death should be carried out as fast as possible after they're triggered. 95% of all actions should be initiated within 15 minutes of the time our client specified. Every action should be completed within 5 hours of the specified time.
 
-### 3.6 Performance
+### 3.5 Performance
 <!--\[The system’s performance characteristics should be outlined in this section. Include specific response times. Where applicable, reference related Use Cases by name.
 
 •               response time for a transaction (average, maximum)
@@ -273,55 +298,54 @@ Actions the user specified for the event of their death should be carried out as
 
 •               resource utilization, such as memory, disk, communications, etc.\]--->
 
-#### 3.6.1 Live interaction
+#### 3.5.1 Live interaction
 Any changes the user makes to his/her data (settings, actions, etc.) should be saved to the database instantaneously. This should only be delayed by network delays.
 
-#### 3.6.2 Emails
+#### 3.5.2 Emails
 Emails related to client administration should reach the client within 5 minutes.
 Emails related to actions the user planned for the event of their death should be sent out within 15 minutes. If the service is degraded these emails should be sent out as soon as possible but within 5 hours.
 
-### 3.7 Supportability
+### 3.6 Supportability
 
 <!--\[This section indicates any requirements that will enhance the supportability or maintainability of the system being built, including coding standards, naming conventions, class libraries, maintenance access, maintenance utilities.\]--->
 
-#### 3.7.1 Code
+#### 3.6.1 Code
 Code just follow conventions for the respective language (e.g. camel case for Java). Functions and variables should have self explanatory names and the code should be commented well.
 
-#### 3.7.2 Git Commits
+#### 3.6.2 Git Commits
 - The summary should start with `[Backend]`, `[Frontend]`, `[Documentation]` or whatever area the commit is relevant to
 - This should be followed by one of the following tags: `[Bug]`(Bug Fix), `[Feat]`(Feature), `[Misc]`(Miscellaneous)
 - After that you should add your actual commit message and fill the description with relevant details
 
-### 3.8 Design Constraints
+### 3.7 Design Constraints
 
 <!--\[This section should indicate any design constraints on the system being built. Design constraints represent design decisions that have been mandated and must be adhered to.  Examples include software languages, software process requirements, prescribed use of developmental tools, architectural and design constraints, purchased components, class libraries, etc.\]--->
 
-#### 3.8.1 MVC architecture
+#### 3.7.1 MVC architecture
 The service should implement the MVC architecture.
 
-#### 3.8.2 Git
+#### 3.7.2 Git
 Git should be used as the version control system for this project.
 
-#### 3.8.3 Security
+#### 3.7.3 Security
 Passwords should never be transmitted or stored in plain text.
 SQL injections or similar malicious actions should be prevented.
 
-### 3.9 Online User Documentation and Help System Requirements
+### 3.8 Online User Documentation and Help System Requirements
 The website should contain well maintained documentation on how to use the service. It should include information about the basic principle of the service but also go in depth about how to set up actions such as sending emails.
 
 <!--\[Describes the requirements, if any, for on-line user documentation, help systems, help about notices, etc.\]--->
 
-### 3.10 Purchased Components
-n/a
-<!---\[This section describes any purchased components to be used with the system, any applicable licensing or usage restrictions, and any associated compatibility and interoperability or interface standards.\]-->
+### 3.9 Purchased Components
+There are no purchased components. The application will run on a private server hosted at [contabo.de](https://contabo.de)
 
-### 3.11 Interfaces
+### 3.10 Interfaces
 
 <!---\[This section defines the interfaces that must be supported by the application. It should contain adequate specificity, protocols, ports and logical addresses, etc. so that the software can be developed and verified against the interface requirements.\]-->
 
-#### 3.11.1 User Interfaces
+#### 3.10.1 User Interfaces
 
-##### 3.11.1.1 Website
+##### 3.10.1.1 Website
 
 The website should provide multiple interfaces to the user. The landing page should contain general information about the service, buttons to `log in` and `register` and links to an `About`, `FAQ` and `Help` page.
 
@@ -338,47 +362,49 @@ The dialog to create a new email action should remind the user of a normal email
 
 Dialog for other actions should contain similar options and be overall similar to the email dialog.
 
-##### 3.11.1.2 Android App
+##### 3.10.1.2 Android App
 The app should only consist of two screens, one to log in to the DigiWill account and one to send a sign of life to the service via a simple button. If the user has 2FA enabled the sign of life screen will also contain a text field to enter the 2FA code. The user can enable a countdown which counts down to the moment the service presumes they're dead. This countdown will reset with every sign of life the service receives.
 
 <!--\[Describe the user interfaces that are to be implemented by the software.\]--->
 
-#### 3.11.2 Hardware Interfaces
+#### 3.10.2 Hardware Interfaces
 n/a
 
-#### 3.11.3 Software Interfaces
+#### 3.10.3 Software Interfaces
 
-##### 3.11.3.1 MongoDB
-The backend will interact with a MongoDB database via SQL. The database will be used to store the data relevant to the operations of the service.
+##### 3.10.3.1 MongoDB
+The backend will interact with a MongoDB database. The database will be used to store the data relevant to the operations of the service.
 
-##### 3.11.3.2 Mail Server
-tbd
+##### 3.10.3.2 Mail Server
+For our email shipment for example of registration and reset password we want setup a self hosted mail server. We use the docker image [tomav/docker-mailserver](https://github.com/tomav/docker-mailserver) that can be installed without much effort.
 
-##### 3.11.3.3 IFTTT
+##### 3.10.3.3 IFTTT
 IFTTT is a service that allows users to setup triggers and correlate them with actions. e.g. their home thermostat reaches a certain threshold so the service sends them an email. We are planning to interface with IFTT to provide a "death trigger". That way the user can trigger loads of diverse actions when DigiWill detects they died. That way we won't have to build interfaces for thousands of services but can simply rely on IFTT to connect to loads of other services and trigger nearly any action the user can imagine. 
 
 <!--\[This section describes software interfaces to other components of the software system. These may be purchased components, components reused from another application or components being developed for subsystems outside of the scope of this **SRS** but with which this software application must interact.\]--->
 
 #### 3.11.4 Communications Interfaces
-n/a
+The client will connect to the server over <code>HTTPS</code> on port 443. Unencrypted connections over <code>HTTP</code> shall redirect to an encrypted connection.
 <!--\[Describe any communications interfaces to other systems or devices such as local area networks, remote serial devices, etc.\]--->
 
 ### 3.12 Licensing Requirements
 n/a
 <!--\[Defines any licensing enforcement requirements or other usage restriction requirements that are to be exhibited by the software.\]--->
 
-### 3.13 Legal, Copyright, and Other Notices
-tbd
-<!--\[This section describes any necessary legal disclaimers, warranties, copyright notices, patent notice, wordmark, trademark, or logo compliance issues for the software.\]--->
-
 ### 3.14 Applicable Standards
-tbd <!-- Material Design for app?--->
-
+The following standards are going to be applied to the code:
+* Comments for understanding complex code sections
+* Design patterns integration
+* Intuitive names of variables and methods.
 
 <!--\[This section describes by reference any applicable standard and the specific sections of any such standards which apply to the system being described. For example, this could include legal, quality and regulatory standards, industry standards for usability, interoperability, internationalization, operating system compliance, etc.\]--->
 
 ## 4 Supporting Information
-tbd
+For more information contact:
+* Christian Schweigel
+* Jannik Möll
+* Morten Harter
+* Robin Kuck
 
 <!--\[The supporting information makes the **SRS** easier to use.  It includes:
 

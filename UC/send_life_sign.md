@@ -1,11 +1,11 @@
-# Use-Case Specification: Send life sign through app
+# Use-Case Specification: Send life sign through App / Browser
 
-# 1. Send life sign through app
+# 1. Send life sign
 
 ## 1.1 Brief Description
 This use case allows a user to send a sign of life to keep the service informed that he didn't pass away.
 
-## 1.2 Mockups
+## 1.2 Mobile Mockups
 ![Login through app](../Mockups/android_lifesign_login.png)
 ![Send life sign through app](../Mockups/android_lifesign_mockup.png)
 ![Send life sign success](../Mockups/android_lifesign_success.png)
@@ -18,7 +18,7 @@ N/A
 
 ## 2.1 Basic Flow
 
-### Activity Diagram
+### Activity Diagram 
 ![Activity Diagram](../ActivityDiagrams/sign_of_life_android.png)
 
 
